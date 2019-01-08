@@ -16,7 +16,7 @@
 }
 
 [data-semantic-aria-accordion] [data-semantic-aria-accordion-section]:first-of-type [data-semantic-aria-accordion-header],
-[data-semantic-aria-accordion] [data-semantic-aria-accordion-section] > [data-semantic-aria-accordion-section]:first-of-type [data-semantic-aria-accordion-header] {
+[data-semantic-aria-accordion] [data-semantic-aria-accordion-panel-nested] [data-semantic-aria-accordion-section]:first-of-type [data-semantic-aria-accordion-header] {
 	border-top: none;
 }
 
@@ -41,7 +41,7 @@
 }
 
 [data-semantic-aria-accordion] [data-semantic-aria-accordion-button],
-[data-semantic-aria-accordion] [data-semantic-aria-accordion-panel] {
+[data-semantic-aria-accordion] [data-semantic-aria-accordion-panel-single] {
 	color: #000;
 	padding: 0.25em;
 	text-align: left;
