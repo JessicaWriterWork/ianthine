@@ -1,8 +1,23 @@
-[data-semantic-aria-accordion],
-[data-semantic-aria-accordion-section],
-[data-semantic-aria-accordion-header],
-[data-semantic-aria-accordion-button],
-[data-semantic-aria-accordion-panel] {
+.semantic-aria-accordion,
+.semantic-aria-accordion section,
+.semantic-aria-accordion h1,
+.semantic-aria-accordion h2,
+.semantic-aria-accordion h3,
+.semantic-aria-accordion h4,
+.semantic-aria-accordion h5,
+.semantic-aria-accordion h6,
+.semantic-aria-accordion h1 > button,
+.semantic-aria-accordion h2 > button,
+.semantic-aria-accordion h3 > button,
+.semantic-aria-accordion h4 > button,
+.semantic-aria-accordion h5 > button,
+.semantic-aria-accordion h6 > button,
+.semantic-aria-accordion h1 + div,
+.semantic-aria-accordion h2 + div,
+.semantic-aria-accordion h3 + div,
+.semantic-aria-accordion h4 + div,
+.semantic-aria-accordion h5 + div,
+.semantic-aria-accordion h6 + div {
 	box-sizing: border-box;
 	display: block;
 	border: none;
@@ -10,39 +25,55 @@
 	padding: 0;
 }
 
-[data-semantic-aria-accordion] {
-	background: #fff;
+.semantic-aria-accordion {
 	border: 1px solid #000;
 }
 
-[data-semantic-aria-accordion] [data-semantic-aria-accordion-section]:first-of-type [data-semantic-aria-accordion-header],
-[data-semantic-aria-accordion] [data-semantic-aria-accordion-panel-nested] [data-semantic-aria-accordion-section]:first-of-type [data-semantic-aria-accordion-header] {
-	border-top: none;
+.semantic-aria-accordion h1,
+.semantic-aria-accordion h2,
+.semantic-aria-accordion h3,
+.semantic-aria-accordion h4,
+.semantic-aria-accordion h5,
+.semantic-aria-accordion h6 {
+	border: 1px solid #000;
 }
 
-[data-semantic-aria-accordion] [data-semantic-aria-accordion-header] {
-	border-bottom: 1px solid #000;
-	border-top: 1px solid #000;
-	min-height: 50px;
-	position: relative;
-}
-
-[data-semantic-aria-accordion] [data-semantic-aria-accordion-button] {
+.semantic-aria-accordion h1 > button,
+.semantic-aria-accordion h2 > button,
+.semantic-aria-accordion h3 > button,
+.semantic-aria-accordion h4 > button,
+.semantic-aria-accordion h5 > button,
+.semantic-aria-accordion h6 > button {
 	font-weight: 900;
-	position: absolute;
-	top: 0;
-	left: 0;
+	min-height: 45px;
 	width: 100%;
-	height: 100%;
 }
 
-[data-semantic-aria-accordion] [data-semantic-aria-accordion-panel] {
+.semantic-aria-accordion > section > div {
 	background: transparent;
 }
 
-[data-semantic-aria-accordion] [data-semantic-aria-accordion-button],
-[data-semantic-aria-accordion] [data-semantic-aria-accordion-panel-single] {
+.semantic-aria-accordion h1 > button,
+.semantic-aria-accordion h2 > button,
+.semantic-aria-accordion h3 > button,
+.semantic-aria-accordion h4 > button,
+.semantic-aria-accordion h5 > button,
+.semantic-aria-accordion h6 > button,
+.semantic-aria-accordion h1 + div,
+.semantic-aria-accordion h2 + div,
+.semantic-aria-accordion h3 + div,
+.semantic-aria-accordion h4 + div,
+.semantic-aria-accordion h5 + div,
+.semantic-aria-accordion h6 + div {
 	color: #000;
-	padding: 0.25em;
 	text-align: left;
+}
+
+.semantic-aria-accordion h1 + div,
+.semantic-aria-accordion h2 + div,
+.semantic-aria-accordion h3 + div,
+.semantic-aria-accordion h4 + div,
+.semantic-aria-accordion h5 + div,
+.semantic-aria-accordion h6 + div {
+	border: 1px solid #000;
 }
