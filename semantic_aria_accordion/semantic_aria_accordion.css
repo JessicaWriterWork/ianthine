@@ -67,6 +67,35 @@
 .semantic-aria-accordion h6 + div {
 	color: #000;
 	text-align: left;
+	padding: 0.1em;
+}
+
+.semantic-aria-accordion h1 > button > span:first-child,
+.semantic-aria-accordion h2 > button > span:first-child,
+.semantic-aria-accordion h3 > button > span:first-child,
+.semantic-aria-accordion h4 > button > span:first-child,
+.semantic-aria-accordion h5 > button > span:first-child,
+.semantic-aria-accordion h6 > button > span:first-child {
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent; 
+	border-left: 20px solid #000;
+	display: inline-block;
+	margin: 0.1em;
+}
+
+.semantic-aria-accordion h1 > button > span:first-child.semantic-aria-accordion-open,
+.semantic-aria-accordion h2 > button > span:first-child.semantic-aria-accordion-open,
+.semantic-aria-accordion h3 > button > span:first-child.semantic-aria-accordion-open,
+.semantic-aria-accordion h4 > button > span:first-child.semantic-aria-accordion-open,
+.semantic-aria-accordion h5 > button > span:first-child.semantic-aria-accordion-open,
+.semantic-aria-accordion h6 > button > span:first-child.semantic-aria-accordion-open {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent; 
+	border-top: 20px solid #000; 
 }
 
 .semantic-aria-accordion h1 + div,
@@ -76,4 +105,21 @@
 .semantic-aria-accordion h5 + div,
 .semantic-aria-accordion h6 + div {
 	border: 1px solid #000;
+}
+
+.semantic-aria-accordion a,
+.semantic-aria-accordion a:link {
+	color: #0000EE;
+}
+.semantic-aria-accordion a:visited { color: #551A8B; }
+.semantic-aria-accordion a:active { color: #c00; }
+
+.semantic-aria-accordion a:focus,
+.semantic-aria-accordion a:hover,
+.semantic-aria-accordion button:focus,
+.semantic-aria-accordion button:hover {
+	background: #cf0;
+	border: none;
+	color: #000;
+	outline: 1px dashed #000;
 }
