@@ -150,5 +150,6 @@
 .semantic-aria-accordion h4 + div.semantic-aria-accordion-container-panel,
 .semantic-aria-accordion h5 + div.semantic-aria-accordion-container-panel,
 .semantic-aria-accordion h6 + div.semantic-aria-accordion-container-panel {
+	border: none;
 	padding: 0;
 }
