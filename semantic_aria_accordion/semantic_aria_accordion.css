@@ -143,3 +143,12 @@
 	color: #000;
 	outline: 1px dashed #000;
 }
+
+.semantic-aria-accordion h1 + div.semantic-aria-accordion-container-panel,
+.semantic-aria-accordion h2 + div.semantic-aria-accordion-container-panel,
+.semantic-aria-accordion h3 + div.semantic-aria-accordion-container-panel,
+.semantic-aria-accordion h4 + div.semantic-aria-accordion-container-panel,
+.semantic-aria-accordion h5 + div.semantic-aria-accordion-container-panel,
+.semantic-aria-accordion h6 + div.semantic-aria-accordion-container-panel {
+	padding: 0;
+}
