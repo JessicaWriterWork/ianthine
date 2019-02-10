@@ -1,155 +1,249 @@
-.semantic-aria-accordion,
-.semantic-aria-accordion section,
-.semantic-aria-accordion h1,
-.semantic-aria-accordion h2,
-.semantic-aria-accordion h3,
-.semantic-aria-accordion h4,
-.semantic-aria-accordion h5,
-.semantic-aria-accordion h6,
-.semantic-aria-accordion h1 > button,
-.semantic-aria-accordion h2 > button,
-.semantic-aria-accordion h3 > button,
-.semantic-aria-accordion h4 > button,
-.semantic-aria-accordion h5 > button,
-.semantic-aria-accordion h6 > button,
-.semantic-aria-accordion h1 + div,
-.semantic-aria-accordion h2 + div,
-.semantic-aria-accordion h3 + div,
-.semantic-aria-accordion h4 + div,
-.semantic-aria-accordion h5 + div,
-.semantic-aria-accordion h6 + div {
-	box-sizing: border-box;
-	display: block;
-	border: none;
-	margin: 0;
-	padding: 0;
+@media all {
+	.semantic-aria-accordion,
+	.semantic-aria-accordion > section,
+	.semantic-aria-accordion > section > section,
+	.semantic-aria-accordion > section > section > section,
+	.semantic-aria-accordion > section > section > section > section,
+	.semantic-aria-accordion > section > section > section > section > section,
+	.semantic-aria-accordion > section > section > section > section > section > section,
+	.semantic-aria-accordion > section > h1,
+	.semantic-aria-accordion > section > section > h2,
+	.semantic-aria-accordion > section > section > section > h3,
+	.semantic-aria-accordion > section > section > section > section > h4,
+	.semantic-aria-accordion > section > section > section > section > section > h5,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6,
+	.semantic-aria-accordion > section > h1 > button,
+	.semantic-aria-accordion > section > section > h2 > button,
+	.semantic-aria-accordion > section > section > section > h3 > button,
+	.semantic-aria-accordion > section > section > section > section > h4 > button,
+	.semantic-aria-accordion > section > section > section > section > section > h5 > button,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 > button,
+	.semantic-aria-accordion > section > h1 + div,
+	.semantic-aria-accordion > section > section > h2 + div,
+	.semantic-aria-accordion > section > section > section > h3 + div,
+	.semantic-aria-accordion > section > section > section > section > h4 + div,
+	.semantic-aria-accordion > section > section > section > section > section > h5 + div,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 + div {
+		box-sizing: border-box;
+		display: block;
+		border: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		color: #000;
+		text-align: left;
+	}
+
+	.semantic-aria-accordion > section > h1,
+	.semantic-aria-accordion > section > section > h2,
+	.semantic-aria-accordion > section > section > section > h3,
+	.semantic-aria-accordion > section > section > section > section > h4,
+	.semantic-aria-accordion > section > section > section > section > section > h5,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6,
+	.semantic-aria-accordion > section > h1 > button,
+	.semantic-aria-accordion > section > section > h2 > button,
+	.semantic-aria-accordion > section > section > section > h3 > button,
+	.semantic-aria-accordion > section > section > section > section > h4 > button,
+	.semantic-aria-accordion > section > section > section > section > section > h5 > button,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 > button {
+		font-weight: bold;
+	}
+
+	.semantic-aria-accordion > section > h1,
+	.semantic-aria-accordion > section > section > h2,
+	.semantic-aria-accordion > section > section > section > h3,
+	.semantic-aria-accordion > section > section > section > section > h4,
+	.semantic-aria-accordion > section > section > section > section > section > h5,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6,
+	.semantic-aria-accordion > section > h1 > button,
+	.semantic-aria-accordion > section > section > h2 > button,
+	.semantic-aria-accordion > section > section > section > h3 > button,
+	.semantic-aria-accordion > section > section > section > section > h4 > button,
+	.semantic-aria-accordion > section > section > section > section > section > h5 > button,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 > button,
+	.semantic-aria-accordion > section > h1 + div,
+	.semantic-aria-accordion > section > section > h2 + div,
+	.semantic-aria-accordion > section > section > section > h3 + div,
+	.semantic-aria-accordion > section > section > section > section > h4 + div,
+	.semantic-aria-accordion > section > section > section > section > section > h5 + div,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 + div {
+		color: #000;
+	}
 }
 
-.semantic-aria-accordion {
-	border: 1px solid #000;
+@media print {
+	.semantic-aria-accordion,
+	.semantic-aria-accordion > section > h1 + div,
+	.semantic-aria-accordion > section > section > h2 + div,
+	.semantic-aria-accordion > section > section > section > h3 + div,
+	.semantic-aria-accordion > section > section > section > section > h4 + div,
+	.semantic-aria-accordion > section > section > section > section > section > h5 + div,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 + div {
+		font-size: 12px;
+	}
+
+	.semantic-aria-accordion > section > h1,
+	.semantic-aria-accordion > section > section > h2,
+	.semantic-aria-accordion > section > section > section > h3,
+	.semantic-aria-accordion > section > section > section > section > h4,
+	.semantic-aria-accordion > section > section > section > section > section > h5,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 {
+		font-size: 16px;
+		margin-top: 1em;
+		text-decoration: underline;
+	}
+
+	.semantic-aria-accordion > section > h1:before { content: "=====> "; }
+	.semantic-aria-accordion > section > section > h2:before { content: "====>> "; }
+	.semantic-aria-accordion > section > section > section > h3:before { content: "===>>> "; }
+	.semantic-aria-accordion > section > section > section > section > h4:before { content: "==>>>> "; }
+	.semantic-aria-accordion > section > section > section > section > section > h5:before { content: "=>>>>> "; }
+	.semantic-aria-accordion > section > section > section > section > section > section > h6:before { content: ">>>>>> "; }
+
+	.semantic-aria-accordion a,
+	.semantic-aria-accordion a:link {
+		color: #000;
+		text-decoration: none;
+	}
 }
 
-.semantic-aria-accordion h1,
-.semantic-aria-accordion h2,
-.semantic-aria-accordion h3,
-.semantic-aria-accordion h4,
-.semantic-aria-accordion h5,
-.semantic-aria-accordion h6 {
-	border: 1px solid #000;
-}
+@media screen {
+	.semantic-aria-accordion,
+	.semantic-aria-accordion > section > h1,
+	.semantic-aria-accordion > section > section > h2,
+	.semantic-aria-accordion > section > section > section > h3,
+	.semantic-aria-accordion > section > section > section > section > h4,
+	.semantic-aria-accordion > section > section > section > section > section > h5,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6,
+	.semantic-aria-accordion > section > h1 + div,
+	.semantic-aria-accordion > section > section > h2 + div,
+	.semantic-aria-accordion > section > section > section > h3 + div,
+	.semantic-aria-accordion > section > section > section > section > h4 + div,
+	.semantic-aria-accordion > section > section > section > section > section > h5 + div,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 + div {
+		border: 1px solid #000;
+		font-size: 24px;
+	}
 
-.semantic-aria-accordion h1 > button,
-.semantic-aria-accordion h2 > button,
-.semantic-aria-accordion h3 > button,
-.semantic-aria-accordion h4 > button,
-.semantic-aria-accordion h5 > button,
-.semantic-aria-accordion h6 > button {
-	font-weight: 900;
-	min-height: 45px;
-	width: 100%;
-}
+	.semantic-aria-accordion > section > h1,
+	.semantic-aria-accordion > section > section > h2,
+	.semantic-aria-accordion > section > section > section > h3,
+	.semantic-aria-accordion > section > section > section > section > h4,
+	.semantic-aria-accordion > section > section > section > section > section > h5,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6,
+	.semantic-aria-accordion > section > h1 + div,
+	.semantic-aria-accordion > section > section > h2 + div,
+	.semantic-aria-accordion > section > section > section > h3 + div,
+	.semantic-aria-accordion > section > section > section > section > h4 + div,
+	.semantic-aria-accordion > section > section > section > section > section > h5 + div,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 + div {
+		padding: 0.1em;
+	}
 
-.semantic-aria-accordion > section > div {
-	background: transparent;
-}
+	.semantic-aria-accordion > section > h1 > button,
+	.semantic-aria-accordion > section > section > h2 > button,
+	.semantic-aria-accordion > section > section > section > h3 > button,
+	.semantic-aria-accordion > section > section > section > section > h4 > button,
+	.semantic-aria-accordion > section > section > section > section > section > h5 > button,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 > button {
+		min-height: 45px;
+		background-color: #ddd;
+	}
 
-.semantic-aria-accordion h1 > button,
-.semantic-aria-accordion h2 > button,
-.semantic-aria-accordion h3 > button,
-.semantic-aria-accordion h4 > button,
-.semantic-aria-accordion h5 > button,
-.semantic-aria-accordion h6 > button,
-.semantic-aria-accordion h1 + div,
-.semantic-aria-accordion h2 + div,
-.semantic-aria-accordion h3 + div,
-.semantic-aria-accordion h4 + div,
-.semantic-aria-accordion h5 + div,
-.semantic-aria-accordion h6 + div {
-	color: #000;
-	text-align: left;
-	padding: 0.1em;
-}
+	.semantic-aria-accordion > section > h1 > button > span,
+	.semantic-aria-accordion > section > section > h2 > button > span,
+	.semantic-aria-accordion > section > section > section > h3 > button > span,
+	.semantic-aria-accordion > section > section > section > section > h4 > button > span,
+	.semantic-aria-accordion > section > section > section > section > section > h5 > button > span,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 > button > span {
+		display: inline-block;
+		vertical-align: middle;
+	}
 
-.semantic-aria-accordion h1 > button > span,
-.semantic-aria-accordion h2 > button > span,
-.semantic-aria-accordion h3 > button > span,
-.semantic-aria-accordion h4 > button > span,
-.semantic-aria-accordion h5 > button > span,
-.semantic-aria-accordion h6 > button > span {
-	display: inline-block;
-	vertical-align: middle;
-}
+	.semantic-aria-accordion > section > h1 + div.semantic-aria-accordion-container-panel,
+	.semantic-aria-accordion > section > section > h2 + div.semantic-aria-accordion-container-panel,
+	.semantic-aria-accordion > section > section > section > h3 + div.semantic-aria-accordion-container-panel,
+	.semantic-aria-accordion > section > section > section > section > h4 + div.semantic-aria-accordion-container-panel,
+	.semantic-aria-accordion > section > section > section > section > section > h5 + div.semantic-aria-accordion-container-panel,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 + div.semantic-aria-accordion-container-panel {
+		border: none;
+		padding: 0;
+	}
 
-.semantic-aria-accordion h1 > button > span:first-child,
-.semantic-aria-accordion h2 > button > span:first-child,
-.semantic-aria-accordion h3 > button > span:first-child,
-.semantic-aria-accordion h4 > button > span:first-child,
-.semantic-aria-accordion h5 > button > span:first-child,
-.semantic-aria-accordion h6 > button > span:first-child {
-	width: 0; 
-	height: 0; 
-	border-top: 12px solid transparent;
-	border-bottom: 12px solid transparent; 
-	border-left: solid #000;
-	border-left-width: calc(24px * 0.866);
-}
+	.semantic-aria-accordion > section > h1 > button > span:first-child,
+	.semantic-aria-accordion > section > section > h2 > button > span:first-child,
+	.semantic-aria-accordion > section > section > section > h3 > button > span:first-child,
+	.semantic-aria-accordion > section > section > section > section > h4 > button > span:first-child,
+	.semantic-aria-accordion > section > section > section > section > section > h5 > button > span:first-child,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 > button > span:first-child,
+	.semantic-aria-accordion > section > h1 > button > span:first-child.semantic-aria-accordion-closed,
+	.semantic-aria-accordion > section > section > h2 > button > span:first-child.semantic-aria-accordion-closed,
+	.semantic-aria-accordion > section > section > section > h3 > button > span:first-child.semantic-aria-accordion-closed,
+	.semantic-aria-accordion > section > section > section > section > h4 > button > span:first-child.semantic-aria-accordion-closed,
+	.semantic-aria-accordion > section > section > section > section > section > h5 > button > span:first-child.semantic-aria-accordion-closed,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 > button > span:first-child.semantic-aria-accordion-closed {
+		width: 0; 
+		height: 0;
+		border: 12px solid #000;
+	}
 
-.semantic-aria-accordion h1 > button > span:last-child,
-.semantic-aria-accordion h2 > button > span:last-child,
-.semantic-aria-accordion h3 > button > span:last-child,
-.semantic-aria-accordion h4 > button > span:last-child,
-.semantic-aria-accordion h5 > button > span:last-child,
-.semantic-aria-accordion h6 > button > span:last-child {
-	margin-left: 0.2em;
-}
+	.semantic-aria-accordion > section > h1 > button > span:first-child,
+	.semantic-aria-accordion > section > section > h2 > button > span:first-child,
+	.semantic-aria-accordion > section > section > section > h3 > button > span:first-child,
+	.semantic-aria-accordion > section > section > section > section > h4 > button > span:first-child,
+	.semantic-aria-accordion > section > section > section > section > section > h5 > button > span:first-child,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 > button > span:first-child {
+		margin-top: 0px;
+		border-top-color: transparent;
+		border-bottom-color: transparent; 
+		border-left-width: calc(24px * 0.866);
+		border-right-width: 0px;
+	}
 
-.semantic-aria-accordion h1 > button > span:first-child.semantic-aria-accordion-open,
-.semantic-aria-accordion h2 > button > span:first-child.semantic-aria-accordion-open,
-.semantic-aria-accordion h3 > button > span:first-child.semantic-aria-accordion-open,
-.semantic-aria-accordion h4 > button > span:first-child.semantic-aria-accordion-open,
-.semantic-aria-accordion h5 > button > span:first-child.semantic-aria-accordion-open,
-.semantic-aria-accordion h6 > button > span:first-child.semantic-aria-accordion-open {
-	width: 0; 
-	height: 0; 
-	border-left: 12px solid transparent;
-	border-right: 12px solid transparent; 
-	border-top: solid #000;
-	border-top-width: calc(24px * 0.866);
-	margin-top: 12px;
-}
+	.semantic-aria-accordion > section > h1 > button > span:first-child.semantic-aria-accordion-closed,
+	.semantic-aria-accordion > section > section > h2 > button > span:first-child.semantic-aria-accordion-closed,
+	.semantic-aria-accordion > section > section > section > h3 > button > span:first-child.semantic-aria-accordion-closed,
+	.semantic-aria-accordion > section > section > section > section > h4 > button > span:first-child.semantic-aria-accordion-closed,
+	.semantic-aria-accordion > section > section > section > section > section > h5 > button > span:first-child.semantic-aria-accordion-closed,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 > button > span:first-child.semantic-aria-accordion-closed {
+		margin-top: 12px;
+		border-top-width: calc(24px * 0.866);
+		border-bottom-width: 0px;
+		border-left-color: transparent;
+		border-right-color: transparent;
+	}
 
-.semantic-aria-accordion h1 + div,
-.semantic-aria-accordion h2 + div,
-.semantic-aria-accordion h3 + div,
-.semantic-aria-accordion h4 + div,
-.semantic-aria-accordion h5 + div,
-.semantic-aria-accordion h6 + div {
-	border: 1px solid #000;
-}
+	.semantic-aria-accordion a,
+	.semantic-aria-accordion a:link { color: #0000EE; }
+	.semantic-aria-accordion a:active { color: #551A8B; }
+	.semantic-aria-accordion a:visited { color: #CC0000; }
 
-.semantic-aria-accordion a,
-.semantic-aria-accordion a:link {
-	color: #0000EE;
-}
-.semantic-aria-accordion a:visited { color: #551A8B; }
-.semantic-aria-accordion a:active { color: #c00; }
+	.semantic-aria-accordion > section > h1 > button > span:last-child,
+	.semantic-aria-accordion > section > section > h2 > button > span:last-child,
+	.semantic-aria-accordion > section > section > section > h3 > button > span:last-child,
+	.semantic-aria-accordion > section > section > section > section > h4 > button > span:last-child,
+	.semantic-aria-accordion > section > section > section > section > section > h5 > button > span:last-child,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 > button > span:last-child {
+		margin-left: 0.1em;
+	}
 
-.semantic-aria-accordion a:focus,
-.semantic-aria-accordion a:hover,
-.semantic-aria-accordion button:focus,
-.semantic-aria-accordion button:hover {
-	background: #cf0;
-	border: none;
-	color: #000;
-	outline: 1px dashed #000;
-}
-
-.semantic-aria-accordion h1 + div.semantic-aria-accordion-container-panel,
-.semantic-aria-accordion h2 + div.semantic-aria-accordion-container-panel,
-.semantic-aria-accordion h3 + div.semantic-aria-accordion-container-panel,
-.semantic-aria-accordion h4 + div.semantic-aria-accordion-container-panel,
-.semantic-aria-accordion h5 + div.semantic-aria-accordion-container-panel,
-.semantic-aria-accordion h6 + div.semantic-aria-accordion-container-panel {
-	border: none;
-	padding: 0;
+	.semantic-aria-accordion a:focus,
+	.semantic-aria-accordion > section > h1 > button:focus,
+	.semantic-aria-accordion > section > section > h2 > button:focus,
+	.semantic-aria-accordion > section > section > section > h3 > button:focus,
+	.semantic-aria-accordion > section > section > section > section > h4 > button:focus,
+	.semantic-aria-accordion > section > section > section > section > section > h5 > button:focus,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 > button:focus,
+	.semantic-aria-accordion a:hover,
+	.semantic-aria-accordion > section > h1 > button:hover,
+	.semantic-aria-accordion > section > section > h2 > button:hover,
+	.semantic-aria-accordion > section > section > section > h3 > button:hover,
+	.semantic-aria-accordion > section > section > section > section > h4 > button:hover,
+	.semantic-aria-accordion > section > section > section > section > section > h5 > button:hover,
+	.semantic-aria-accordion > section > section > section > section > section > section > h6 > button:hover {
+		background: #cf0;
+		border: none;
+		color: #000;
+		outline: 1px dashed #000;
+	}
 }
